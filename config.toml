@@ -1,0 +1,190 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://lifechurchauburnhills.org/2040"
+languageCode = "en-AU"
+title = "LifeChurch Auburn Hills | Vision 2040"
+publishDir = "docs"
+
+# Metadata
+[params]
+  author = "LifeChurch Auburn Hills"
+  description = "Life Church Auburn Hills | Vision 2040"
+
+# Hero section (from here on is for icon theme)
+[params.hero]
+  img = "img/lifechurch_ah_mosaic.jpg"
+  brand = "img/LifeChurch_Auburn Hills_logo_white.png"
+  url = "https://lifechurchauburnhills.org"
+  # title = "2040 Vision"
+  description = "Know Jesus. Grow in Community. Go Serve."
+
+# Navigation section
+[params.nav]
+  url = "https://lifechurchauburnhills.org"
+  president = "Story"
+  mission = "Mission"
+  physical = "2040 Vision"
+  work = "Vision Dinners"
+  team = "Team"
+  financial = "Financial"
+  thanks = "Thanks"
+  # Include logo instead if HOME:
+  #logo = "img/LifeChurch_Auburn_Hills_logo.png"
+
+# President section
+[params.president]
+  enable = true
+
+
+# Mission section
+[params.mission]
+  enable = true
+  
+  mission_statement = "Know Jesus. Grow in Community. Go Serve."
+
+  [params.mission.images]
+    enable = true
+
+    [[params.mission.images.list]]
+      img = "img/about_1.jpg"
+    [[params.mission.images.list]]
+      img = "img/about_2.jpg"
+    [[params.mission.images.list]]
+      img = "img/about_3.jpg"
+    [[params.mission.images.list]]
+      img = "img/about_4.jpg"
+
+  [[params.mission.item]]
+    weight = 1
+    name = "vision"
+    title = "Vision"
+    subtitle = "Our vision is a multicultural community being empowered and transformed by the grace, truth, and love of Jesus Christ."
+    description = "While a simple concept, the incredible power of Jesus Christ working in the lives of a community with diverse experiences, backgrounds, and cultural contexts has amazing potential. When he walked the earth, Jesus brought together men and women from all social classes, ethnicities, and religious affiliations. These people were given grace by Jesus for their old ways, shown the truth of God, and led to experience the powerful love of Christ. As a result, these people Jesus brought together, who once saw themselves as distant enemies, grew to be a new family that would change the world through their service, sacrifice, and love. It is our hope to continue that legacy, bringing people from different backgrounds together, working through the difficulties together with Christ, all while being empowered and transformed into who Jesus would have us be."
+
+  [[params.mission.item]]
+    weight = 2
+    name = "values"
+    title = "Values"
+    subtitle = " "
+    description = "<h2>Real People.</h2><p>We believe life is best lived openly and honestly. We value authentic relationships where we can be honest about our successes and shortcomings.</p><h2>Real God.</h2><p>We believe God is alive and active in the world today, and that he is at work bringing his plans to reality. We believe we can know God both personally and communally.</p><h2>Real life.</h2><p>We believe that God intended us as humans to live a life full of meaning, purpose, and passion. In Jesus, God gave us the perfect picture of what it means to live a full life. God desires us to become more like Jesus to experience more of life.</p>"
+
+  [[params.mission.item]]
+    weight = 3
+    name = "strategy"
+    title = "Strategy"
+    subtitle = " "
+    description = "<h2>New Friends.</h2><p>Making new friends is the first priority for our team. Whether through creatiive community outreach or Sunday services, our hope is that everyone who is a part of LCAH would establish new friendships that allow for meaningful conversation.</p><h2>New Lives.</h2><p>When friends follow Jesus together, life transformation happens. Through participation in mission-focused groups, we are encouraged and challenged to be more like Jesus.</p><h2>New Communities.</h2><p>We believe the influence of Christ followers from LCAH will affect community systems in Auburn Hills and wherever else we plant churches, helping schools, government, and business to be more Christlike.</p>"
+
+# Services section
+[params.physical]
+  enable = true
+  video = false
+  vidlink = "https://vimeo.com/channels/staffpicks/93951774"
+  title = "2040 Vision"
+  description = "Over the next twenty years, we want to leave a legacy that grows God's kingdom in Auburn Hills and around the world."
+
+  [[params.physical.item]]
+    icon = "icon-group"
+    title = "10 Church Planters"
+    description = "By 2040, we desire to have discipled, trained, and launched 10 church planters to start new communities of Christ followers. Our goal is that each of these 10 church planters would be able to launch multiethnic churches in global neighborhoods."
+
+  [[params.physical.item]]
+    icon = "icon-map-marker"
+    title = "20 Local Outreach Initiatives"
+    description = "We desire to see 20 new initiatives launched by LCAH leaders that are specific, contextualized, and inspired by Matthew 25. We long to see tangible, long-term differences in the lives of those who are overlooked or disadvantaged in our community."
+
+  [[params.physical.item]]
+    icon = "icon-globe"
+    title = "30 Global Missionaries"
+    description = "Because Auburn Hills is a global neighborhood filled with new immigrants, we want to be intentional about inspiring and discipling these immigrants into missionaries who can grow God's kingdom all over the world in contextual, sustainable ways."
+    
+
+# Work section
+[params.work]
+  enable = true
+  [[params.work.item]]
+    title = "August 5, 2018"
+    subtitle = "41 Attendees"
+    img = "img/IMG_2832.jpg"
+
+  [[params.work.item]]
+    title = "August 19, 2018"
+    subtitle = "43 participants"
+    img = "img/IMG_6593.jpg"
+
+  [[params.work.item]]
+    title = "September 2, 2018"
+    subtitle = "40 participants"
+    img = "img/IMG_6841.jpg"
+
+  [[params.work.item]]
+    title = "September 9, 2018"
+    subtitle = "55 participants"
+    img = "img/IMG_2906.jpg"
+
+
+# Team section
+[params.team]
+  enable = true
+  title = "Our Team"
+  description = "LifeChurch Auburn Hills has a growing launch team made up of over 20 people with influence in our community. Here are some of our leaders."
+
+  [[params.team.item]]
+    name = "Donearl Johnson"
+    position = "Lead Pastor"
+    description = "Donearl is a Navy veteran, child welfare advocate, and the lead pastor of LifeChurch Auburn Hills. He is currently a member of the Avondale School Board, and has been married to his wife Jenetta for 22 years. They have four children."
+    img = "img/donearl_johnson.png"
+    #email = ""
+    
+    [[params.team.item]]
+    name = "Cameron Underdown"
+    position = "Executive Pastor"
+    description = "A former web developer, Cameron has been in full time ministry for ten years, working primarily with high school, college, and international students. He lives in Pontiac with his wife Lyndee and two children, Marguerite and CK."
+    img = "img/cam_underdown.jpg"
+    # email = ""
+
+	[[params.team.item]]
+    name = "Kelly Ray"
+    position = "LifeKids"
+    description = "Kelly loves working with children, and she is currently pursuing her Master's degree in advanced behavorial analysis in order to be an educator and advocate for children with special needs. She studies at Oakland University."
+    img = "img/kelly_ray.jpg"
+    # email = ""
+
+
+# Financial section
+[params.financial]
+  enable = true
+  title = "Financial Needs"
+  description = "In order to fulfill what we believe God is calling us to fulfill, LifeChurch Auburn Hills is in need of financial supporters to help us become sustainable."
+  contributions_title = "2017 Contributions"
+  contributions_description = "Contributions increased almost three times, from $12,255 in 2016 to $35,790 in 2017. There was a significant uptick in gifts from other non-profits and organizations, as well as over $3,500 in student gifts."
+  contributions_graph_id = "financial-report-contributions"
+  expenses_title = "3 Year Budget Projection"
+  expenses_description = "In order to staff two positions, pay rent at Auburn Elementary, purchase initial equipment, pay contract employees, and operate our ministry at a high level, we project LifeChurch Auburn Hills will need budgets of 210,000, 265,000, and 320,000 in its first three years of operation. This will ensure a stable leadership team, potentially additional staff, and savings to help us in our fourth year when church partner support potentially stops. We receive some support from the Evangelical Covenant Church denomination throughout the first three years, and we are looking for $100,000 from 5-10 church partners in the first three years as well."
+  expenses_graph_id = "financial-report-expenses"
+  
+  # Thanks
+  [params.thanks]
+  enable = false
+  title = "Thank you!"
+  message = "To our many volunteers and partner organizations, to our amazing donors and friends, and to all the students who have inspired us through their brilliance, perseverance, and service, we wish to say thank you. 2017 has been an incredible year, and we are so pleased to share it with you all. We know our success is because of all of you, so please celebrate with us."
+  img = "img/team.jpg"
+
+# Contact section
+[params.contact]
+  enable = false
+  title = "Get In Touch"
+  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = false
+  note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
+  github = "#"
+  twitter = "#"
+  facebook = "#"
+  vine = "#"
+  linkedin = "#"
+  instagram = "#"
+  

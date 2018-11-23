@@ -1,0 +1,15 @@
+<div id="fh5co-financial" data-section="financial">
+<div class="container">
+	<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+  <h2>{{ .Site.Params.financial.title }}</h2>
+  <p>{{ .Site.Params.financial.description }}</p>
+  </div>
+    <div class="col-md-12 expenses">
+    <h2>{{ .Site.Params.financial.expenses_title }}</h2>
+    <p style="max-width:860px;">{{ .Site.Params.financial.expenses_description | markdownify}}</p>
+	<div style="min-height:450px;">
+	<canvas id="{{ .Site.Params.financial.expenses_graph_id }}" width="1000" height="450"></canvas>
+    </div>
+    </div>
+</div>
+</div> <!-- END fh5co-about -->

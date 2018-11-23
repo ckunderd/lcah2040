@@ -1,0 +1,43 @@
+<div class="js-sticky">
+  <div class="fh5co-main-nav">
+    <div class="container">
+      <div class="fh5co-menu-1">
+
+	<a href="{{ .Site.Params.nav.url }}" data-nav-section="home">{{ with .Site.Params.nav }}{{ if isset . "logo" }}<img src="{{ .logo | absURL }}" height="20" alt="Home" class="logo">{{ end }}{{ if (not (isset . "logo")) }}Home{{ end }}{{ end }}</a>
+
+	{{ if .Site.Params.president.enable }}
+	<a href="#" data-nav-section="president">{{ with .Site.Params.nav.president }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+	{{ if .Site.Params.mission.enable }}
+	<a href="#" data-nav-section="mission">{{ with .Site.Params.nav.mission }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.physical.enable }}
+	<a href="#" data-nav-section="services">{{ with .Site.Params.nav.physical }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.work.enable }}
+	<a href="#" data-nav-section="work">{{ with .Site.Params.nav.work }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.team.enable }}
+	<a href="#" data-nav-section="team">{{ with .Site.Params.nav.team }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+	{{ if .Site.Params.financial.enable }}
+	<a href="#" data-nav-section="financial">{{ with .Site.Params.nav.financial }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+	{{ if .Site.Params.thanks.enable }}
+	<a href="#" data-nav-section="thanks">{{ with .Site.Params.nav.thanks }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.contact.enable }}
+	<a href="#" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+      </div>
+    </div>
+  </div>
+</div>
